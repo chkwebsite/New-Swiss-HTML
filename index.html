@@ -823,7 +823,7 @@ color <input type="color" id="colorChoice"> -->
           <div class="row">
             <div class="col-md-12">
                 <h2 class="main-headding text-light">Resource Material</h2>
-                <div class="resourcematerial slider">
+                <div class="resourcematerial slider sm-show">
                   <div class="slide">
                     <div class="gallery-bx-wrp">
                       <img src="assets/img//gal_1.jpg" alt="">
@@ -860,7 +860,7 @@ color <input type="color" id="colorChoice"> -->
                       </div>
                     </div>  
               </div>
-                <div class="hover01 column d-none">
+                <div class="hover01 column lg-show">
                   <div class="bo-l1">
                     <figure class=""><img src="assets/img/res-1.png" /></figure>
                     <span>Hover</span>
@@ -1465,38 +1465,13 @@ color <input type="color" id="colorChoice"> -->
         }]
     });
     
-    $(window).bind('resize', function(){
-        if($(window).width()<768){
-          $('.resourcematerial').slick({
+  
+    
+        $('.resourcematerial').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: true,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 1
-            }
-        }]
-    });
-        }
-      })
-
-      $(window).bind('resize', function(){
-        if($(window).width()>768){
-          $('.resourcematerial').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 2000,
         arrows: false,
         dots: false,
         pauseOnHover: false,
@@ -1512,8 +1487,6 @@ color <input type="color" id="colorChoice"> -->
             }
         }]
     });
-        }
-      })
    
     // =================================================== 
     $('.Gallery-partner').slick({
