@@ -1,0 +1,11 @@
+:root{
+    --scroll-bg-1:#0dcaf0;
+    --scroll-bg-2:#06758b;
+    --top-header-bg:#2c3f44;
+    --sidenav-bg-1:#0dcaf0;
+    --sidenav-bg-2:rgba(0,0,0,0.7);
+    --sidebar-icon-color:rgba(255, 255, 255, 0.5);
+    --sidebar-label-color:rgba(255, 255, 255, 0.5);
+    --all-label:#0dcaf0;
+
+}
